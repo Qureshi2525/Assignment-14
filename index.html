@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./buy now.png" type="image/x-icon">
+    <STYLE>
+        .blink {
+                animation: blinker 1.0s linear infinite;
+                color: rgb(190, 5, 236);
+                font-family: sans-serif;
+                text-align: center; 
+                /* margin: 5% 5%; */
+                font-size: x-large;
+                /* padding-right: 300px; */
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            .marquee{
+            animation: blinker 1.5s linear infinite;
+            color: rgb(4, 102, 69);
+            font-family: sans-serif;
+            transition: all;
+            font-size: xx-large;
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: white;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }   
+#main{
+    background-color: gray;
+    width: 100%;
+    height: 650px;
+
+}
+        .main, .main2{
+    width: 100%;
+    height: 60px;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    margin-right: 80px;
+    justify-content: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;
+}
+.item1{
+    /* border: 1px solid red; */
+    height: 25px;
+padding: 18px;
+margin: 2px;
+font-weight: bolder;
+color: black;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item1:hover{
+    border: 1px solid rgb(5, 9, 248);
+padding: 10px;
+margin: 10px;
+font-weight: bolder;
+color: rgb(4, 0, 250);
+text-decoration: underline;
+font-size: x-large;
+cursor: pointer; 
+text-transform: capitalize;
+}
+.button{
+    padding: 10px;
+    margin: 10px;
+    width: 90px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.button:hover{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: brown;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.pic1{
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+.pic1:hover{
+    width: 25px;
+    height: 25px;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+.r1{
+    /* padding-right: 400px; */
+    padding-top: 8px;
+    margin-top: 2.5px;
+    margin-left: 120px;
+    width: 180px;
+    height: 40px;
+    color: blue;
+    accent-color: blue;
+    border: none;
+    cursor: pointer;
+    }
+.r1:hover{
+    /* padding-right: 300px; */
+    padding-top: 8px;
+    margin-top: 2.5px;
+    margin-left: 120px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: medium;
+    color: red;
+    accent-color: red;
+    border: none;
+    cursor: pointer;
+    }
+   .item2{
+    /* border: 1px solid black; */
+    width: 83%;
+    height: 8px;
+    margin-left: 130px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+   }
+   .item21{
+    /* border: 1px solid black; */
+    width: 47%;
+    height: 5px;
+    margin-left: 10px;
+    background-color: rgb(4, 250, 4);
+    border-radius: 3px;
+    }
+   .item22{
+    /* border: 1px solid black; */
+    width: 47%;
+    height: 5px;
+    margin-left: 10px;
+    background-color: rgb(250, 4, 4);
+    border-radius: 3px;
+   }
+   .item21:hover{
+    /* border: 1px solid black; */
+    width: 47%;
+    height: 5px;
+    margin-left: 10px;
+    background-color: rgb(250, 4, 4);
+    border-radius: 3px;
+    }
+   .item22:hover{
+    /* border: 1px solid black; */
+    width: 47%;
+    height: 5px;
+    margin-left: 10px;
+    background-color: rgb(4, 250, 4);
+    border-radius: 3px;
+   }
+   .item3{
+    /* border: 1px solid black; */
+    width: 83%;
+    height: 130px;
+    margin-left: 130px;
+    padding-top: 55px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* margin-right: 80px; */
+    box-sizing: border-box;
+    cursor: pointer;
+    }
+h1{
+    margin-left: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+h1:hover{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: tomato;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.l1{
+width: 83%;
+height: 80px;
+margin-left: 130px;
+background-color: white;
+}
+.item4{
+    width: 93%;
+    height: 60px;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    margin-left: 25px;
+    justify-content: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: black;
+}
+.r2{
+    /* padding-right: 400px; */
+    padding-top: 8px;
+    margin-top: 2.5px;
+    /* margin-left: 120px; */
+    width: 100%;
+    height: 40px;
+    color: rgb(238, 238, 247);
+    accent-color: rgb(237, 237, 241);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-right: 15px;
+    }
+.item41{
+    /* border: 1px solid red; */
+    width: 55px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+padding-top: 8px;
+color: white;
+margin-left: 10px;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item42{
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+margin-left: 10px;
+padding-top: 8px;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item43{
+    /* border: 1px solid red; */
+    width: 55px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+margin-left: 10px;
+padding-top: 8px;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item44{
+    /* border: 1px solid red; */
+    width: 95px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+margin-left: 10px;
+padding-top: 8px;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item41:hover{
+color: brown;
+border: 1px solid brown;
+background-color: white;
+text-transform: capitalize;
+text-align: center;
+}
+.item42:hover{
+    color: brown;
+border: 1px solid brown;
+background-color: white;
+text-transform: capitalize;
+text-align: center;
+
+}
+.item43:hover{
+    color: brown;
+border: 1px solid brown;
+background-color: white;
+text-transform: capitalize;
+text-align: center;
+
+}
+.item44:hover{
+    color: brown;
+border: 1px solid brown;
+background-color: white;
+text-transform: capitalize;
+text-align: center;
+
+}
+.r5{
+    width: 90px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+accent-color: white;
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+}
+.r5:hover{
+    width: 90px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: tomato;
+accent-color: tomato;
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+}
+.button1{
+    padding: 10px;
+    margin: 10px;
+    width: 90px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.button1:hover{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: brown;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.button2{
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    font-weight: bolder;
+    color: green;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.button2:hover{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: green;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.blue{
+    width: 93%;
+    height: 60px;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    margin-left: 25px;
+    justify-content: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: blue;
+    padding-right: 15px;
+}
+.b1{
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+accent-color: white;
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+padding-top: 15px;
+}
+.b1:hover{
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: rgb(75, 28, 20);
+accent-color: rgb(71, 28, 20);
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+}
+.b2{
+    /* border: 1px solid red; */
+    height: 25px;
+padding: 18px;
+margin: 2px;
+font-weight: bolder;
+color: white;
+cursor: pointer;
+text-transform: uppercase;
+}
+.b2:hover{
+border: 1px solid rgb(75, 22, 38);
+padding: 10px;
+margin: 10px;
+font-weight: bolder;
+color: rgb(8, 83, 8);
+text-decoration: underline;
+background-color: white;
+font-size: x-large;
+cursor: pointer; 
+text-transform: capitalize;
+}
+.green{
+    width: 93%;
+    height: 70px;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    margin-left: 25px;
+    justify-content: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgb(36, 128, 59);
+    padding-right: 15px;
+    
+}
+.g1{
+    
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+accent-color: white;
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+padding-top: 25px;
+margin-left: 15px;
+}
+.g1:hover{
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: rgb(75, 28, 20);
+accent-color: rgb(71, 28, 20);
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+padding-top: 25px;
+}
+.g2{
+    /* border: 1px solid red; */
+    height: 25px;
+padding: 23px;
+margin: 2px;
+font-weight: bolder;
+color: white;
+cursor: pointer;
+text-transform: uppercase;
+}
+.g2:hover{
+border: 1px solid rgb(75, 22, 38);
+padding: 10px;
+margin: 10px;
+font-weight: bolder;
+color: rgb(8, 83, 8);
+text-decoration: underline;
+background-color: white;
+font-size: x-large;
+cursor: pointer; 
+text-transform: capitalize;
+}
+.gl1{
+width: 100%;
+height: 90px;
+padding-top: 5px;
+margin-right: 130px;
+margin-top: 20px;
+background-color: white;
+}
+.button3{
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+    border-radius: 10px;
+   }
+.button3:hover{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: green;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+#button3{
+    background-image: url(./signin\ icon.png);
+    background-size: 40px;
+            background-repeat: no-repeat;
+            left: 35px;
+            text-transform: lowercase;
+            cursor: pointer;
+}
+.pic3{
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    margin-left: 8px;
+    background-color: rgb(36, 128, 59);
+}
+.pic3:hover{
+    width: 35px;
+    height: 35px;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+/* mehroon */
+.m1{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    margin-top: 20px;
+}
+.mehroon{
+    width: 93%;
+    height: 70px;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    margin-left: 25px;
+    justify-content: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: brown;
+    padding-right: 15px;
+}
+
+.picm2{
+    width: 40px;
+    height: 40px;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+.picm2:hover{
+    width: 45px;
+    height: 45px;
+    padding-top: 20px;
+    margin-left: 8px;
+}
+p{
+    font-size: x-large;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    text-transform: capitalize;
+    /* padding-top: 5px; */
+}
+p:hover{
+    font-size: x-large;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: rgb(23, 8, 245);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bolder;
+    /* padding-top: 5px; */
+}
+.mehroon1{
+justify-content: left;
+margin-left: 10px;
+}
+.m2{
+    
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: white;
+accent-color: white;
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+padding-top: 25px;
+margin-right: 455px;
+}
+.m2:hover{
+    width: 100px;
+    height: 25px;
+/* padding: 18px; */
+font-weight: bolder;
+color: rgb(20, 75, 23);
+accent-color: rgb(21, 20, 71);
+cursor: pointer;
+text-transform: uppercase;
+border: none;
+padding-top: 25px;
+}
+
+    </STYLE>
+</head>
+<body>
+    <Div id="main">
+        <marquee class="marquee">YASIR RASHEED QURESHI WEB AND AAP CCO - 118488 TEACHER SIR RIZWAN BHATTI.</marquee>
+        <!-- white bar -->
+        <div class="main">
+            <fieldset class="r1">
+                <input type="radio" name="emotions" checked="checked" value="Miri UI">Miri UI
+            </fieldset>
+            <div class="main2">
+                <div class="item1">docs</div>
+                <div class="item1">components</div>
+                <div class="item1">example pages</div>
+                <img src="./facebook.png" alt="" class="pic1">
+                <img src="./twiter.jpg" alt="" class="pic1">
+                <img src="./instagram.jpeg" alt="" class="pic1">
+                 <Button class="button">Buy Now</Button>
+                </div>
+            </div>
+            <!-- navigation -->
+            <div class="item2">
+                <div class="item21"></div>
+                <div class="item22"></div>
+            </div>
+            <div class="item3">
+                <h1>navigation</h1>
+            <p class="blink">YASIR RASHEED CCO - 118488</p><br>
+            </div>
+            <!-- black line -->
+            <div class="l1">
+                <div class="item4">
+                    <div class="r2">
+                        <fieldset class="r5">
+                            <input type="radio" name="emotions" checked="checked" value="Miri UI">Miri UI
+                        </fieldset>
+                         <div class="item41">Home</div>
+                        <div class="item42">templates</div>
+                        <div class="item43">pages</div>
+                        <div class="item44">elements</div>
+                    </div>
+                    <Button class="button2">Buy Now</Button>
+                    <Button class="button1">discover</Button>
+                </div>
+            </div>
+                <!-- blue line -->
+            <div class="l1">
+                <div class="blue">
+                    <fieldset class="b1">
+                        <input type="radio" name="emotions" checked="checked" value="Miri UI">Miri UI
+                    </fieldset>
+                    <div class="blue">
+                        <div class="b2">home</div>
+                        <div class="b2">templates</div>
+                        <div class="b2">pages</div>
+                        <img src="./facebook.png" alt="" class="pic1">
+                        <img src="./twiter1.png" alt="" class="pic1">
+                        <img src="./insta1.png" alt="" class="pic1">
+                        <img src="./link.png" alt="" class="pic1">
+                        </div>
+                </div>
+  <!-- green line -->
+  <div class="gl1">
+    <div class="green">
+        <div class="g1">
+            <input type="radio" name="emotions" checked="checked" value="Miri UI">Miri UI
+        </div>
+            <div class="green">
+                <div class="g2">home</div>
+                <div class="g2">templates</div>
+                <div class="g2">pages</div>
+                <Button class="button3" id="button3">signin</Button>    
+                <img src="./serch.png" alt="" class="pic3">
+                <img src="./cart1.png" alt="" class="pic3">
+            </div>
+    </div>
+<!-- mehroon line -->
+<div class="m1">
+    <div class="mehroon">
+       <div class="mehroon1">
+           <fieldset class="m2">
+               <input type="radio" name="emotions" checked="checked" value="Miri UI">Miri UI
+            </fieldset>
+        </div>
+        <img src="./facebook.png" alt="facebook" class="picm2" ><p>facebook</p>
+        <img src="./twiter1.png" alt="twitter" class="picm2" ><p>twitter</p>
+        <img src="./instagram.jpeg" alt="instagram" class="picm2" ><p>instagram </p>
+        
+    </div>
+</div>
+
+
+    </div>
+</body>
+</html>
